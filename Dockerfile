@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 RUN apt-get -qq update && \
-    apt-get -qq install -y ffmpeg locales
+    apt-get -qq install -y locales python3 ffmpeg python3-pip
 
 
 COPY requirements.txt .
