@@ -6,7 +6,7 @@ RUN apt-get -qq update
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Kolkata
 
-RUN apt-get -qq install -y locales python3 ffmpeg python3-pip
+RUN apt-get -qq install -y locales python3 ffmpeg python3-pip git
 
 
 COPY requirements.txt .
