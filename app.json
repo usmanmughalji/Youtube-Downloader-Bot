@@ -8,16 +8,12 @@
   "repository": "https://github.com/aryanvikash/Youtube-Downloader-Bot",
   "success_url": "https://t.me/youtubdlbot",
   "website": "https://github.com/aryanvikash/Youtube-Downloader-Bot",
+  "stack": "container",
   "env": {
         "API_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
         "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
         "BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true}
   },
-      "buildpacks": [
-        {"url": "https://github.com/heroku/heroku-buildpack-apt.git"},
-        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"},
-        {"url": "heroku/python"}
-    ],
   "formation": {
         "worker": {
             "quantity": 1,
