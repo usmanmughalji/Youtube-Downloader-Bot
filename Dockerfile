@@ -1,7 +1,12 @@
 FROM ubuntu:20.04
 
-RUN apt-get -qq update && \
-    apt-get -qq install -y locales python3 ffmpeg python3-pip
+
+RUN apt-get -qq update
+
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Kolkata
+
+RUN apt-get -qq install -y locales python3 ffmpeg python3-pip
 
 
 COPY requirements.txt .
