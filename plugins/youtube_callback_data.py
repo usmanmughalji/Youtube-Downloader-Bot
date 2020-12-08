@@ -57,6 +57,10 @@ async def catch_youtube_dldata(c, q):
     filepath = os.path.join(userdir, filext)
     # await q.edit_message_reply_markup([[InlineKeyboardButton("Processing..")]])
 
+    cachedir = [
+      "false"
+    ]
+    
     audio_command = [
         "youtube-dl",
         "-c",
